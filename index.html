@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Page title</title>
+     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900&display=swap" rel="stylesheet">
+     <meta name="viewport" content="width=device-width initial-scale=1">
+     <meta name="theme-color" content="#49366F">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="style.css">
+     <style>
+          .fa-house{
+              color: #999;
+          }
+     </style>
+</head>
+<body>
+     <header>
+          <h2 class="name">Olaleye Ayomide</h2>
+          
+     </header>
+     <div class="menu-container" id="menu-container">
+          <button class="menu-btn" id="menu-btn"><i class="fa-solid fa-bars"></i>Menu</button>
+          <button class="close-btn" id="close-btn"><i class="fa-solid fa-xmark"></i>Close</button>
+          <ul id="menu-list">
+          
+   <li><a href="index.html"><!-- <i class="fa-solid fa-house"></i> --><span>Home</span></a></li>
+   <li><a href="projects.html"><!-- <i class="fa-solid fa-paperclip"></i> -->Projects</a></li>
+   <li><a href="about.html"><!-- <i class="fa-solid fa-user"></i> -->About</a></li>       
+              <!--  <li></li>-->
+          </ul>
+     </div>
+     <main>
+     <section class="item1">
+          <img class="logo-img" src="ayom.png" alt="mylogo">
+     </section>
+     <section class="item2">
+          <h1 class="welcome-text">Welcome to my portfolio website!</h1>
+       <p>
+I'm Ayomide Olaleye, a passionate frontend web developer with one year of professional experience. I specialize in creating visually appealing and user-friendly websites that deliver an exceptional user experience.
+</p>
+<p>
+     With a strong foundation in HTML, CSS, and JavaScript, I bring life to designs by transforming them into interactive and responsive web applications. I have a keen eye for detail and strive to craft pixel-perfect interfaces that not only look great but also function seamlessly across different devices and browsers.
+</p>
+<p>
+     Throughout my journey as a developer, I have honed my skills in one of the most popular front-end framework React.js, enabling me to build dynamic and efficient web applications. I believe in staying up-to-date with the latest industry trends and technologies, which empowers me to create modern and cutting-edge websites.
+</p>
+<p>
+     Collaboration is at the heart of my work philosophy. I enjoy working closely with designers and other developers to bring concepts to life and solve complex problems together. I believe that effective communication and teamwork are essential for delivering high-quality projects on time.
+</p>
+<p>
+     Please take a moment to browse through my portfolio, where you will find examples of my work and projects I have contributed to. I am excited about the opportunity to take on new challenges and contribute my skills to create meaningful web experiences.
+Thank you for visiting my website, and I look forward to connecting with you soon. If you have any inquiries or project ideas, feel free to reach out via the contact information provided.
+</p>
+          </section>
+          <section class="item3">
+          <div class="contacts">
+<a href="https://www.facebook.com/ayomide.olaleye.3954" target="_blank"class="facebook contactLinks"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://wa.me/+2347014329650" target="_blank" class="whatsapp contactLinks"><i class="fa-brands fa-whatsapp"></i></a>
+           <a href="https://twitter.com/Ayomide88321872?t=1lO0Zz9hdfAXyilY0jXWYA&s=09" class="twitter contactLinks" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          </section>
+          <img class="bizcard" src="bizcard.png" alt="business card" class="item5">
+<section class="section section-2">
+     <div class="container left">
+          <img src="html.png" alt="html 5 logo" class="skill-img">
+          <span class="skill">HTML</span>
+     </div>
+     <div class="container right">
+          <img src="css.png" alt="css logo" class="skill-img">
+          <span class="skill">CSS</span>
+     </div>
+     <div class="container left">
+          <img src="javascript.png" alt="JavaScript logo" class="skill-img">
+          <span class="skill">JavaScript</span>
+     </div>
+     <div class="container right">
+          <img src="react.png" alt="react logo" class="skill-img">
+          <span class="skill">React</span>
+     </div>
+</section>
+        </main>
+        <footer>
+          <h2 class="footer">&copy; 2023 Ayomide Olaleye</h2>
+     </footer>    
+</body>
+<script>
+     let menuBtn = document.getElementById("menu-btn")
+     let menuList = document.getElementById("menu-list")
+     let closeBtn = document.getElementById("close-btn")
+     menuBtn.addEventListener('click', function(){
+          menuList.style.display = "flex"
+          menuBtn.style.display = "none"
+          closeBtn.style.display = "block"
+     })
+     closeBtn.addEventListener('click', function(){
+          menuList.style.display = "none"
+          menuBtn.style.display = "block"
+          closeBtn.style.display = "none"
+     })
+</script>
+</html>

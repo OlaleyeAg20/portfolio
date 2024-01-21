@@ -67,7 +67,7 @@ header{
     border-bottom: 3px solid #1F242D;
 }
 .currentPage {
-    color: #1F242D;
+    color: aqua;
 }
 .ul{
     color: #1f242d;
@@ -90,9 +90,7 @@ ul{
 main{
     height: 100%;
     padding: 25px;
-}
-.about{
-    width: 50%;
+    text-align: center;
 }
 .menu-btn{
     display: none;
@@ -109,7 +107,7 @@ main{
     border-radius: 2rem;
     padding: 16px 20px;
     color: #f1f1f1;
-    font-size: x-large;
+    font-size: 1rem;
     cursor: pointer;
     font-weight: inherit;
     box-shadow: 3px 3px 10px #1F242D;
@@ -159,9 +157,6 @@ main{
     .menu-btn{
         display: inline;
    }
-    .main{
-        flex-direction: column-reverse;
-    }
     .about{
         width: 98%;
         
@@ -169,13 +164,4 @@ main{
     .close-btn{
      display: block;
     }
-}
-
-@keyframes animations {
- from {
-  box-shadow: 5px 10px 20px #1F242D, -5px -10px 20px #1F242D;
- }
- to {
-  box-shadow: -5px -10px 20px #1F242D, 5px 10px 20px #1F242D;
- }
 }
